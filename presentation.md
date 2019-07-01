@@ -38,7 +38,7 @@ Holt-Winters
 \end{align*}</annotation></semantics></math>
 
 ::: {.notes}
-Calculating seasonality
+Notice tht $\beta$ and $\gamma$ are time constants.
 :::
 
 Use in InfluxDB
