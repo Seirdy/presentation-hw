@@ -53,17 +53,23 @@ Syntax & Implementation
 
 ::: {.incremental}
 -   `<N>`: \# of points to predict
--   $\alpha$, $\beta$, & $\gamma$ calculated with Nelder-Mead algo
 -   `<S>`: seasonality, calculated from $\alpha$, $\beta$, & $\gamma$
 :::
+
+::: {.notes}
+Maybe explain *how* seasonality is calculated from time constants.
+:::
+
+Calculating time constants
+--------------------------
+
+$\alpha$, $\beta$, & $\gamma$ calculated with the *Nelder-Mead algorithm*
 
 ::: {.notes}
 Nelder-Mead draws increasingly smaller areas w/ different vals for the params until
 converge
 
-FIXME: People might interrupt to ask for elaboration on how Nelder-Mead optimization
-works and for *how* seasonality is calculated. You might want to replace these lines
-with some info about them.
+FIXME: add more stuff!
 :::
 
 Water Levels
@@ -83,3 +89,5 @@ Memory usage
 Questions
 =========
 
+End
+===
