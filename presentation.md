@@ -2,7 +2,8 @@
 author:
 - Rohan Kumar
 - Shriya Nandwani
-title: 'Holt-Winters'
+date: '2019-07-01'
+title: 'Holt-Winters and InfluxDB'
 ---
 
 <!--markdownlint-disable single-h1-->
@@ -50,9 +51,9 @@ Syntax & Implementation
 
 `HOLT_WINTERS[_WITH-FIT](<function>(<field_key>),<N>,<S>)`
 
--   !N is how many points you want to predict
+-   `<N>` is how many points you want to predict
 -   Use Nelder-Mead optimization to calculate $\alpha$, $\beta$, & $\gamma$
--   !S is seasonality, calculated from $\alpha$, $\beta$, & $\gamma$
+-   `<S>` is seasonality, calculated from $\alpha$, $\beta$, & $\gamma$
 
 ::: {.notes}
 Nelder-Mead draws increasingly smaller areas w/ different vals for the params until
