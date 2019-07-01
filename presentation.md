@@ -24,6 +24,8 @@ Speaker notes
 Double/Triple exponential smoothing
 -----------------------------------
 
+![Such meta](yo_dawg.jpg)
+
 Holt-Winters
 ------------
 
