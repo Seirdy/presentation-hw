@@ -78,7 +78,3 @@ Memory usage
 Questions
 =========
 
-::: {.notes}
-Does anybody here who knows HANA better than us have some advice on seasonality? We were
-thinking that HANA has "weekly" seasons with peak memory usage on Monday
-:::
