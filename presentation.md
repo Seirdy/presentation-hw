@@ -3,10 +3,10 @@ author:
 - Rohan Kumar
 - Shriya Nandwani
 date: '2019-07-01'
-title: 'Holt-Winters and InfluxDB'
+title: 'Holt-Winters InfluxDB'
 ---
 
-<!--markdownlint-disable single-h1-->
+<!--markdownlint-disable-->
 
 Exponential Smoothing
 =====================
@@ -41,6 +41,11 @@ Holt-Winters
 ::: {.notes}
 Notice tht $\beta$ and $\gamma$ are time constants as well. Each of these equations has
 some advantages.
+
+-   three prereqs
+    -   random
+    -   have a trend
+    -   exhibit seasonality
 :::
 
 Use in InfluxDB
@@ -67,7 +72,6 @@ $\alpha$, $\beta$, & $\gamma$ are calculated with the *Nelder-Mead algorithm*
 
 Nelder-Mead Algorithm
 ---------------------
-
 
 ![Nelder-Mead at work](images/Nelder-Mead.gif)
 
