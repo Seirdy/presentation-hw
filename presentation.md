@@ -63,7 +63,12 @@ Maybe explain *how* seasonality is calculated from time constants.
 Calculating time constants
 --------------------------
 
-$\alpha$, $\beta$, & $\gamma$ calculated with the *Nelder-Mead algorithm*
+$\alpha$, $\beta$, & $\gamma$ are calculated with the *Nelder-Mead algorithm*
+
+Nelder-Mead Algorithm
+---------------------
+
+Replace this text with that gif you found.
 
 ::: {.notes}
 Nelder-Mead draws increasingly smaller areas w/ different vals for the params until
