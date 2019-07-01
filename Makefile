@@ -1,8 +1,12 @@
 INPUT ?= *.md
-OUTPUT ?= presentation.html
+OUTPUT_FILENAME ?= presentation
+OUTPUT ?= $(OUTPUT_FILENAME).html
 OUTPUT_FORMAT ?= revealjs
 
-build:
+presentation:
 	pandoc $(INPUT) -f markdown -t $(OUTPUT_FORMAT) -s -o $(OUTPUT)
-build-html:
-	$(MAKE) OUTPUT_FORMAT=html
+
+notes:
+	$(MAKE) OUTPUT_FORMAT=html OUTPUT_FILENAME=notes
+
+both: presentation notes
