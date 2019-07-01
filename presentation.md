@@ -42,6 +42,18 @@ Calculating seasonality
 Use in InfluxDB
 ===============
 
+Syntax & Implementation
+------------
+
+`HOLT_WINTERS[_WITH-FIT](<function>(<field_key>),<N>,<S>)`
+
+- !N is how many points you want to predict
+- !S is seasonality
+	- calculated from  alpha, beta, and gamma vals
+	- in order to find these three values we use the Nelder-Mead optimization
+		- draws increasingly smaller areas w/ different vals for the params until converge
+
+
 Water Levels
 ------------
 
@@ -51,6 +63,8 @@ Memory usage
 ------------
 
 ![Mean free memory](Picture2.png)
+
+`holt_winters_with_fit(mean("available"), 10, 4) FROM "mem" WHERE $timeFilter GROUP BY time($__interval) fill(null)`
 
 Questions
 =========
