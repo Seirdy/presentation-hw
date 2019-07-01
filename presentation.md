@@ -68,7 +68,8 @@ $\alpha$, $\beta$, & $\gamma$ are calculated with the *Nelder-Mead algorithm*
 Nelder-Mead Algorithm
 ---------------------
 
-Replace this text with that gif you found.
+
+![Nelder-Mead at work](images/Nelder-Mead.gif)
 
 ::: {.notes}
 Nelder-Mead draws increasingly smaller areas w/ different vals for the params until
