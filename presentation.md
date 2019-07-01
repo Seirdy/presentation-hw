@@ -38,7 +38,8 @@ Holt-Winters
 \end{align*}</annotation></semantics></math>
 
 ::: {.notes}
-Notice tht $\beta$ and $\gamma$ are time constants.
+Notice tht $\beta$ and $\gamma$ are time constants as well. Each of these equations has
+some advantages.
 :::
 
 Use in InfluxDB
@@ -51,12 +52,15 @@ Syntax & Implementation
 
 -   !N is how many points you want to predict
 -   Use Nelder-Mead optimization to calculate time constants
--   !S is seasonality
-    -   calculated from $\alpha$, $\beta$, and $\gamma$
+-   !S is seasonality, calculated from $\alpha$, $\beta$, and $\gamma$
 
 ::: {.notes}
 Nelder-Mead draws increasingly smaller areas w/ different vals for the params until
 converge
+
+FIXME: People might interrupt to ask for elaboration on how Nelder-Mead optimization
+works and for *how* seasonality is calculated. You might want to replace these lines
+with some info about them.
 :::
 
 Water Levels
