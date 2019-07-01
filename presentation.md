@@ -51,9 +51,11 @@ Syntax & Implementation
 
 `HOLT_WINTERS[_WITH-FIT](<function>(<field_key>),<N>,<S>)`
 
--   `<N>` is how many points you want to predict
--   Use Nelder-Mead optimization to calculate $\alpha$, $\beta$, & $\gamma$
--   `<S>` is seasonality, calculated from $\alpha$, $\beta$, & $\gamma$
+::: {.incremental}
+-   `<N>`: \# of points to predict
+-   $\alpha$, $\beta$, & $\gamma$ calculated with Nelder-Mead algo
+-   `<S>`: seasonality, calculated from $\alpha$, $\beta$, & $\gamma$
+:::
 
 ::: {.notes}
 Nelder-Mead draws increasingly smaller areas w/ different vals for the params until
@@ -73,6 +75,8 @@ Memory usage
 ------------
 
 ![Mean free memory](images/mem_available.png)
+
+. . .
 
 `holt_winters_with_fit(mean("available"), 10, 4) FROM "mem" WHERE $timeFilter GROUP BY time($__interval) fill(null)`
 
